@@ -1,0 +1,18 @@
+In res/navigation/nav_graph.xml:
+    xml
+    CopyEdit
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.weatherapp.MainFragment"
+        android:label="Weather"
+        app:destination="@id/weatherDetailsFragment"/>
+
+    <fragment
+        android:id="@+id/weatherDetailsFragment"
+        android:name="com.example.weather.WeatherDetailsFragment"
+        android:label="Weather Details">
+    </fragment>
